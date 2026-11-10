@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>PCLSE</title>
-    <style>
-        body {
-            background: #111;
-            color: #fff;
-            font-family: system-ui;
-            text-align: center;
-            margin-top: 120px;
-        }
-        button {
-            padding: 16px 32px;
-            font-size: 18px;
-            background: #00aa44;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #00bb55;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>PCL SE</title>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: system-ui;
+      text-align: center;
+      margin-top: 120px;
+    }
+    .dl-btn {
+      display: inline-block;
+      padding: 16px 32px;
+      font-size: 18px;
+      background: #00aa44;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .dl-btn:hover {
+      background: #00bb55;
+    }
+  </style>
 </head>
 <body>
-    <h2>Download Plain Craft Symbo Edition</h2>
-    <br>
-    <button onclick="doDownload()">Download</button>
-
-    <script>
-        function doDownload() {
-            const link = "https://v4.gh-proxy.org/https://github.com/Hydrogen-Peroxide/PCL-Symbio-Edition/releases/download/v2.17.14/PCL-Symbio-Edition-2.17.14-x64.exe";
-            const a = document.createElement("a");
-            a.href = link;
-            // a.download = "Plain Craft Symbo Edition.exe";
-            a.click();
-        }
-    </script>
+  <h2>Download Plain Craft Symbo Edition</h2>
+  <br>
+  <br>
+  <a class="dl-btn" href="https://mirror.ghproxy.com/?download=https://github.com/Hydrogen-Peroxide/PCL-Symbio-Edition/releases/download/v2.17.14/PCL-Symbio-Edition-2.17.14-x64.exe">Download</a>
 </body>
 </html>
