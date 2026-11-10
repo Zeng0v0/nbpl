@@ -1,17 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="referrer" content="no-referrer">
-<title>你被骗了</title>
+    <meta charset="UTF-8">
+    <title>PCLSE</title>
+    <style>
+        body {
+            background: #111;
+            color: #fff;
+            font-family: system-ui;
+            text-align: center;
+            margin-top: 120px;
+        }
+        button {
+            padding: 16px 32px;
+            font-size: 18px;
+            background: #00aa44;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00bb55;
+        }
+    </style>
 </head>
 <body>
-<iframe
-src="https://player.bilibili.com/player.html?bvid=BV1GJ411x7h7"
-width="700"
-height="420"
-frameborder="0"
-allowfullscreen>
-</iframe>
+    <h2>Download Plain Craft Symbo Edition</h2>
+    <br>
+    <button onclick="doDownload()">Download</button>
+
+    <script>
+        function doDownload() {
+            const link = "https://example.com/file.zip";
+            const a = document.createElement("a");
+            a.href = link;
+            // a.download = "filename.zip";
+            a.click();
+        }
+    </script>
 </body>
 </html>
