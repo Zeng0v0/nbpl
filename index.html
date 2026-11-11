@@ -11,25 +11,47 @@
       text-align: center;
       margin-top: 120px;
     }
-    .dl-btn {
-      display: inline-block;
+    .top-text {
+      color: #ffffff;
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+    button {
       padding: 16px 32px;
       font-size: 18px;
       background: #00aa44;
       color: white;
-      text-decoration: none;
+      border: none;
       border-radius: 10px;
       cursor: pointer;
     }
-    .dl-btn:hover {
+    button:hover {
       background: #00bb55;
     }
   </style>
 </head>
 <body>
   <h2>Download Plain Craft Symbo Edition</h2>
-  <br>
-  <br>
-  <a class="dl-btn" href="https://mirror.ghproxy.com/?download=https://github.com/Hydrogen-Peroxide/PCL-Symbio-Edition/releases/download/v2.17.14/PCL-Symbio-Edition-2.17.14-x64.exe">Download</a>
+
+  <div class="top-text">
+    在下载前请先阅读<br>
+    1.仅支持Windows平台。<br>
+    2.我不是原作者！原作者链接：https://github.com/Hydrogen-Peroxide<br>
+    3.如果下载被拦截，可以保留，实在不行就在下载文件夹内把未确认的文件放到一个文件夹(可以是桌面)，然后把后缀改为exe。(如果没有后缀可以在文件资源管理器中打开文件扩展名)
+  </div>
+
+  <button onclick="doDownload()">Download</button>
+
+  <script>
+    function doDownload() {
+      const link = "https://mirror.ghproxy.com/?download=https://github.com/Hydrogen-Peroxide/PCL-Symbio-Edition/releases/download/v2.17.14/PCL-Symbio-Edition-2.17.14-x64.exe";
+      const a = document.createElement("a");
+      a.href = link;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
 </body>
 </html>
